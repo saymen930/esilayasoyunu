@@ -7,15 +7,15 @@
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
-      "value": ""
+      "value": "5742918775:AAH9N8AUsBf0Jd4_ZJ4bSp0Hiu0RYXOyors"
     },
     "ID_BOT": {
       "description": "Botun ID Yazın (İlk Rakamlar)",
-      "value": ""
+      "value": "5742918775"
     },
     "BOT_ISMI": {
       "description": "Botun Kullanıcı Adını '@' Olmadan Yazın",
-      "value": "TeslaGameBot"
+      "value": "BugsBunny_Tahmin_bot"
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",

@@ -19,7 +19,7 @@
     },
     "RAUND_SAYI": {
       "description": "RAUND SAYISI (3-5) İdeal aralık ",
-      "value": "3"
+      "value": "5"
     },
     "SANIYE": {
       "description": "Resimlerin Değişmesi Süresi / 10000=10 Saniye",

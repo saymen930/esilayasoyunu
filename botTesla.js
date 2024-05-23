@@ -44,7 +44,7 @@ bot.command("txt", async (ctx) => {
                 parse_mode: 'HTML'
             })
         } else {
-            ctx.reply('Botta henüz oyun oynanmadı.')
+            ctx.reply('benimle henüz oyun oynanmadın😕.')
         }
     })
 });
@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Merhaba,Ben Esila 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖*
+    *Merhaba,Ben Esila 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nojemin rengine bak bu işi bize bırak💅🏻*
     ${isGroup ? "" : "\n*Temel komutların listesi için /yardim*"}
 `)
 
@@ -468,7 +468,7 @@ bot.action('AZ', ctx=>{
     ctx.replyWithMarkdown(`*🇦🇿 VİP Gruplar 🏆*`,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup ', url:'t.me/botdestekk'}],
+                [{text:'1) Qrup ', url:'t.me/sorundestekk'}],
                 [{text:'2) kanal ', url:'t.me/esilabotbilgilendirme'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
@@ -484,7 +484,7 @@ bot.action('TR', ctx=>{
         `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Grub', url:'t.me/botdestekk'}],
+                [{text:'1) Grub', url:'t.me/sorundestekk'}],
                 [{text:'2) kanal', url:'t.me/esilabotbilgilendirme'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]

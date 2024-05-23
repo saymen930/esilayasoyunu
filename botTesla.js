@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Merhaba,Ben 𝔹𝕌𝔾𝕊 𝔹𝕌ℕℕ𝕐 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖*
+    *Merhaba,Ben Esila 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖*
     ${isGroup ? "" : "\n*Temel komutların listesi için /yardim*"}
 `)
 
@@ -142,14 +142,14 @@ const OyunDurdurHusnuEhedov = (ctx, chatId) => {
 		db.update(chatId, ch => chat)
 		if (top.length > 0) {
 			ctx.replyWithMarkdown(Degisken(`
-				*🌟 Kazananlar Sıralaması:*
+				*🌟 Kazananlar Sıralaması💅🏻:*
 
 				${top.sort((a, b) => b.score - a.score).map((member, index) => `${["🥇","🎖","🏅"][index] || "🔸"} ${index + 1}. *${member.firstName}*: ${member.score} ${HusnuEhedov(member.score, "puan 🎁", "puan 🎁", "puan 🎁")}`).join("\n")}
 			`))
 		}
 	}
 	else {
-		ctx.reply("🆘 Oyun başlamadı... 🙅🏻\nOyunu Başlat ➡️  /game")
+		ctx.reply("🆘 Oyun başlamadı cınım... 🙅🏻\nOyunu Başlat ➡️  /game")
 	}
 }
 const RaundMesajHusnuEhedov = (chatId, round, time) => {
@@ -340,7 +340,7 @@ ${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${[
 				`))
 			}
 			else {
-				ctx.reply("❗️ Bu grupta hiç oyun oynamadınız")
+				ctx.reply("❗️ Bu grupta benimle hiç oynamadın🥺")
 			}
 		}
 		else {
@@ -394,7 +394,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("yardim", (ctx) => {
     return ctx.replyWithMarkdown(Degisken(`
-        *Merhaba! "Tahimin" oyunu için\noluşturulmuş bir botum🤖*\n🆘*Bot yalnızca gruplar için tasarlanmıştır!*\n\n_ℹ️Kurallar budur : Sana resimler atıyorum ve sen kategoriye uyğun rakamlarla tahmin etmelisin🕵🏼‍♂️,İlk olarak qrupa ekle ve Grupda medya izini açık olsun unutma! veya Botu yönetici yapın_🗣\n_Sonra Komutlarla ile oyunu başladın_🎯\n
+        *Merhaba! "Tahimin" oyunu için\noluşturulmuş bir botum💋*\n🆘*Bot yalnızca gruplar için tasarlanmıştır!*\n\n_ℹ️Kurallar budur : Sana resimler atıyorum ve sen kategoriye uyğun rakamlarla tahmin etmelisin🕵🏼‍♂️,İlk olarak qrupa ekle ve Grupda medya izini açık olsun unutma! veya Botu yönetici yapın_🗣\n_Sonra Komutlarla ile oyunu başladın_🎯\n
           *Temel Komutların Listesi👇🏻*\n\n🎲 /game - _Oyunu Başlat_\n⛔️ /stop - _Oyunu durdurmak_\n📊 /top - _Oyuncuların puanı gösterir_\n_🌍 /g - Global Puanlar_\nℹ️ /yardim - _Size yardım edicek_\n👤 /kullanici - _Kullanıcı hakkında bilgi_\n🆔 /id - _Grup infosu_`))
 })
 
@@ -428,7 +428,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Sahip ', url:`t.me/slmBATU`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
+                [{text:'Sahip ', url:`t.me/debubluman`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
             ]
         }
     })
@@ -436,12 +436,12 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`*Merhaba,Ben 𝔹𝕌𝔾𝕊 𝔹𝕌ℕℕ𝕐 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖\n**Temel komutların listesi için /yardim*
+    ctx.replyWithMarkdown(`*Merhaba,Ben Esila 𝕋𝔸ℍ𝕄İℕ 𝔼𝕋  Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖\n**Temel komutların listesi için /yardim*
         `,{
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Sahip', url:`t.me/slmBATU`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
+                [{text:'Sahip', url:`t.me/debubluman`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
             ]
         }
     })
@@ -468,8 +468,8 @@ bot.action('AZ', ctx=>{
     ctx.replyWithMarkdown(`*🇦🇿 VİP Gruplar 🏆*`,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup ', url:'t.me/bugsbunnytahmin'}],
-                [{text:'2) Qrup ', url:'t.me/bugsbunnytahmin'}],
+                [{text:'1) Qrup ', url:'t.me/botdestekk'}],
+                [{text:'2) kanal ', url:'t.me/esilabotbilgilendirme'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
@@ -484,8 +484,8 @@ bot.action('TR', ctx=>{
         `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Grub', url:'t.me/bugsbunnytahmin'}],
-                [{text:'2) Grub', url:'t.me/bugsbunnytahmin'}],
+                [{text:'1) Grub', url:'t.me/botdestekk'}],
+                [{text:'2) kanal', url:'t.me/esilabotbilgilendirme'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
